@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Children Mental Health Application",
+    "desc": "Web application platform that allows users to identify thier mental health using their symptoms and questionaries, The questionaries divided into Anxity, Depresion, and Stress.",
+    "image": "mentalapp",
+    "links": {
+      
+    }
+  },
+
+  {
+    "name": "Children Mental Health Website",
+    "desc": "Website that enables users to search about mental health awareness, view how to control their mental health, and some Yoga thearopy tips and videos for mental well-being.",
+    "image": "mentalhealthweb",
+    "links": {
+      
+    }
+  },
+
+  {
+    "name": "Election Fulcrum",
+    "desc": "Online Election System would have Candidate registration, document verification, auto-generated User ID, pass for candidates and Voters. Admin Login which will be handled by Election Commission.",
+    "image": "votingsystem",
+    "links": {
+      
+    }
+  },
+
+  {
+    "name": "Personal Portfolio",
+    "desc": "Welcome to my professional portfolio! Here, you'll find a curated selection of projects that showcase my skills and experience in [your field or industry]. From [notable project/task] to [another project/task], I've demonstrated my ability to [key skill] and deliver results. Explore my work to learn more about my approach, capabilities, and the value I can bring to your organization.",
+    "image": "portfolio-v1",
+    "links": {
+      
+    }
+  },
+
+  {
+    "name": "Hotel Management System",
+    "desc": "In this project, I analyzed the front desk and housekeeping operations at a 15-room hotel and implemented process improvements that increased efficiency by 25%. Key initiatives included streamlining check-in/check-out procedures, optimizing room assignment logic, and introducing a mobile app for housekeeping staff to receive real-time room status updates. These changes enhanced the guest experience, reduced wait times, and allowed staff to focus on higher-value tasks.",
+    "image": "hotel",
+    "links": {
+      
+    }
+  }
+]

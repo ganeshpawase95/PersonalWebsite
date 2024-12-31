@@ -290,7 +290,7 @@ header .navbar ul li a:hover {
     padding: 1rem;
     color: #fff;
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #011aff;
+    border-bottom: 0.5rem solid #ff8401;
   }
   .fa-times {
     transform: rotate(180deg);
@@ -348,6 +348,7 @@ header .navbar ul li a:hover {
   font-size: 5rem;
   font-weight: 800;
   color: #001c4d;
+  margin-top: 20px;
 }
 .home .content h2 span {
   font-size: 5rem;
@@ -470,7 +471,7 @@ header .navbar ul li a:hover {
     margin-top: 12rem;
   }
   .home .image img {
-    margin-top: -12rem;
+    margin-top: -1rem;
   }
   .home .content p {
     font-size: 2.2rem;

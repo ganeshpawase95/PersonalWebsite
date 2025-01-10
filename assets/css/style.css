@@ -17,7 +17,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #7d7c7c;  
+  background: #8d8d8d;  
   font-family: "Poppins", sans-serif;
 }
 
@@ -136,7 +136,7 @@ header .navbar ul li a:hover {
 
 
 /* From Uiverse.io by andrew-demchenk0 */ 
-.switch {
+/* .switch {
   margin-left: 10px;
   font-size: 17px;
   position: relative;
@@ -193,7 +193,7 @@ header .navbar ul li a:hover {
   z-index: 1;
   width: 20px;
   height: 10px;
-}
+} */
 
 /* .switch:hover */.sun svg {
   animation: rotate 15s linear infinite;
@@ -347,17 +347,17 @@ header .navbar ul li a:hover {
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
-  color: #001c4d;
+  color: #000000;
   margin-top: 20px;
 }
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #c00000; 
+  color:  rgb(177, 3, 3); 
 }
 .home .content p {
   font-size: 2.5rem;
-  color: #000;
+  color: #000000;
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -655,7 +655,9 @@ button:active {
 .skills .container .bar:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
   background-color: rgba(2, 7, 100, 0.9) !important;
+  transform: scale(1.1, 1.1);
 }
+
 .skills .container .bar .info {
   display: flex;
   flex-direction: column;

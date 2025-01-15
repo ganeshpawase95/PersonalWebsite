@@ -21,7 +21,7 @@ body{
 }
 
 *::selection{
-  background: #2b3dda;
+  background: #ffae00;
   color: #fff;
 }
 html{
@@ -35,7 +35,7 @@ html::-webkit-scrollbar-track{
   background: rgb(235, 202, 245);
 }
 html::-webkit-scrollbar-thumb{
-  background: #420177;
+  background: #ff6600;
 }
 /* navbar starts */
 header{
@@ -77,15 +77,15 @@ header .navbar li{
 }
 header .navbar ul li a{
   font-size: 1.57rem;
-  color: #0E2431;
+  color: #110f0f;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover{
-  color: #011aff;
-  border-bottom: .2rem solid #011aff;
+  color: #ff6600;
+  border-bottom: .2rem solid #ff6600;
   padding: .5rem 0;
 }
 /* navbar ends */
@@ -170,10 +170,12 @@ header .navbar ul li a:hover{
 .msg p{
     font-size: 1.5rem;
     font-weight: 600;
+
 }
 .wrapper h1{
   font-size:80px;
   text-align: center;
+  color: rgb(255, 0, 0);
 }
 
 /* back button */
@@ -215,7 +217,7 @@ header .navbar ul li a:hover{
 .footer{
   min-height: auto;
   padding-top: 0;
-  background: rgb(0, 1, 43);
+  background: linear-gradient(to bottom, rgb(21 16 48), #a67bfe);
 }
 .footer .box-container{
   display: flex;

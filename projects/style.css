@@ -375,8 +375,8 @@ header .navbar ul li a:hover{
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #ff0033;
-  color: rgb(13, 0, 44);
+  background: #ffae00;
+  color: rgb(255, 127, 8);
   border-radius: 5rem;
   transition: 1s linear;
   z-index: 1000;

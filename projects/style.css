@@ -36,7 +36,7 @@ html::-webkit-scrollbar-track{
   background: rgb(235, 202, 245);
 }
 html::-webkit-scrollbar-thumb{
-  background: #420177;
+  background: #ac6700;
 }
 
 /* navbar starts */
@@ -88,15 +88,15 @@ header .navbar li{
 }
 header .navbar ul li a{
   font-size: 1.57rem;
-  color: #0E2431;
+  color: #000000;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover{
-  color: #011aff;
-  border-bottom: .2rem solid #011aff;
+  color: #ff8401;
+  border-bottom: .2rem solid black;
   padding: .5rem 0;
 }
 /* navbar ends */
@@ -105,7 +105,7 @@ header .navbar ul li a:hover{
 #menu{
   font-size: 3rem;
   cursor: pointer;
-  color: rgb(24, 2, 63);
+  color: linear-gradient(to bottom, rgb(21 16 48), #a67bfe);
   display: none;
 }
 @media(max-width:768px){
@@ -142,9 +142,9 @@ header .navbar ul li a:hover{
   header .navbar ul li a.active,
   header .navbar ul li a:hover{
     padding: 1rem;
-    color: #fff;
+    color: #ff8401;
     border-radius: .5rem;
-    border-bottom: .5rem solid #011aff;
+    border-bottom: .5rem solid #ff8401;
   }
   .fa-times{
     transform: rotate(180deg);
@@ -158,7 +158,7 @@ header .navbar ul li a:hover{
 /* work section starts */
 .work{
   /* background: #010124; */
-  background: linear-gradient(to bottom, #010136, #00003a);
+  background: linear-gradient(to bottom, rgb(21 16 48), #a67bfe);
   margin-top: 5rem;
 }
 .work h2{

@@ -17,7 +17,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #8d8d8d;  
+  background: #8d8d8d;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e6eff1, #8d8d8d);  /* Chrome 10-25, Safari 5.1-6 */
   font-family: "Poppins", sans-serif;
 }
 
@@ -273,7 +274,7 @@ header .navbar ul li a:hover {
 .home .image img {
   width: 70%;
   margin-left: 6rem;
-  border-radius: 50%;
+  border-radius: 10%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
@@ -401,13 +402,30 @@ header .navbar ul li a:hover {
 /* hero media queries starts*/
 @media (max-width: 450px) {
   .home .btn {
-    margin: 4rem 0;
+    margin: 1rem 0;
   }
   .socials {
-    margin-top: 12rem;
+    margin-top: 5rem;
   }
   .home .image img {
-    margin-top: -1rem;
+    margin-top: -10rem;
+  }
+  .home .content p {
+    font-size: 2.2rem;
+  }
+  .home .content p span {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
+  .home .btn {
+    margin: 1rem 0;
+  }
+  .socials {
+    margin-top: 5rem;
+  }
+  .home .image img {
+    margin-top: -10rem;
   }
   .home .content p {
     font-size: 2.2rem;
@@ -627,6 +645,23 @@ button:active {
     width: 100%;
   }
 }
+@media (min-width: 600px) and (max-width: 1250px) and (orientation: portrait) {
+  .skills .container {
+    padding: 0;
+    margin: 0;
+  }
+  .skills .container .row {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+  .skills .container {
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+
 /* skills media queries ends*/
 /* skills section ends */
 

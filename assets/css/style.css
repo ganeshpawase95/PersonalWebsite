@@ -270,12 +270,13 @@ header .navbar ul li a:hover {
 .home .image {
   flex: 1 1 40rem;
   z-index: 1;
+  text-align: center;
 }
 .home .image img {
   width: 65%;
-  margin-top: 3rem;
-  margin-left: 12rem;
-  border-radius: 10%;
+  margin-top: 2rem;
+  /* margin-left: 7rem; */
+  border-radius: 15%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }

@@ -35,9 +35,12 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#blogs">Blogs</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
+            
         </nav>
+        
 </header>
 <!-- navbar ends -->
 
@@ -167,7 +170,6 @@
 <!-- education section ends -->
 
 
-
 <!-- work project section starts -->
 <section class="work" id="work">
 
@@ -189,18 +191,16 @@
 
 <!-- experience section starts -->
 <section class="experience" id="experience">
-
   <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
-
   <div class="timeline">
 
     <div class="container right">
       <div class="content">
         <div class="tag">
-          <h2>Software Developer</h2>
+          <h2>Junior Software Engineer</h2>
         </div>
         <div class="desc">
-            <h3>Neptron Technology</h3>
+            <h3>Neptron Technologies</h3>
             <p>January 2025 - present</p>
         </div>
       </div>
@@ -232,14 +232,67 @@
 
   <div class="morebtn">
     <a href="/experience" class="btn"><span>View All <i class="fas fa-arrow-right"></i></span>
-      
-  </a>
+    </a>
   </div>
-
 </div>
 
 </section>
 <!-- experience section ends -->
+
+
+<!-- Blogs Section Start -->
+<section class="section section--blogs" id="blogs">
+  <div class="container">
+    <h2 class="heading" style="color: white;"><i class="fas fa-blog"></i> Blogs <span>Written</span></h2>
+    <div class="blogs__grid">
+
+      <article class="blog-card">
+        <div class="blog-card__image">
+          <img src="./assets/images/projects/portfolio-v1.png" alt="Understanding the Basics of JavaScript"
+            loading="lazy" />
+        </div>
+        <div class="blog-card__content">
+          <h3 class="blog-card__title">Understanding the Basics of JavaScript</h3>
+          <p class="blog-card__excerpt">
+            Explore JavaScript fundamentals: variables, data types, functions, and control structures that form the core
+            of this powerful language.
+          </p>
+          <div class="morebtn">
+            <a href="/404.html" class="btn"><span>Read More<i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card__image">
+          <img src="./assets/images/blog2.png" alt="Getting Started with Three.js" loading="lazy" />
+        </div>
+        <div class="blog-card__content">
+          <h3 class="blog-card__title">Getting Started with Three.js</h3>
+          <p class="blog-card__excerpt">
+            Learn the basics of Three.js, a powerful JavaScript 3D library, and start building interactive 3D
+            experiences on the web.
+          </p>
+          <div class="morebtn">
+            <a href="https://dev.to/ganeshpawase95/threejs-1b9i" class="btn" target="_blank"><span>Read More<i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <div class="blogs__footer">
+      <div class="morebtn" style="margin-top: 20px;">
+    <a href="/404.html" class="btn"><span>View All <i class="fas fa-arrow-right"></i></span>
+  </a>
+  </div>
+    </div>
+  </div>
+</section>
+<!-- Blogs Section End -->
+
+
 
 <!-- contact section starts -->
 <section class="contact" id="contact">
@@ -356,6 +409,30 @@
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./assets/js/script.js"></script>
+<script>
+  let lastScrollTop = 0;
+  const header = document.querySelector('header');
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+      // Scrolling down
+      header.classList.remove('transparent');
+      header.classList.add('solid');
+    } else {
+      // Scrolling up
+      header.classList.remove('solid');
+      header.classList.add('transparent');
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+  });
+
+  // Initial state
+  header.classList.add('solid');
+</script>
+
 
 </body>
 </html>

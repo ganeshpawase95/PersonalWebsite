@@ -18,7 +18,6 @@ html {
 }
 body {
   background: #8d8d8d;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e6eff1, #8d8d8d);  /* Chrome 10-25, Safari 5.1-6 */
   font-family: "Poppins", sans-serif;
 }
 
@@ -239,6 +238,9 @@ header .navbar ul li a:hover {
 /* hamburger icon ends */
 
 /* hero section starts*/
+
+
+
 .home {
   position: relative;
   display: flex;
@@ -1477,16 +1479,34 @@ form .button-area {
 
 
 /* Responsive Tweaks */
-@media (max-width: 640px) {
-  .section__title {
-    font-size: 2rem;
+@media (max-width: 1024px) {
+  .blogs__grid {
+    flex-direction: column;
+    align-items: center;  /* center blog cards */
   }
+
+  .blog-card {
+    max-width: 80%;       /* smaller width for tablet */
+  }
+}
+
+
+@media (max-width: 600px) {
+  .blogs__grid {
+    flex-direction: column;
+    align-items: center;  /* center blog cards */
+  }
+
+  .blog-card {
+    max-width: 85%;       /* almost full width but centered */
+  }
+
   .blog-card__title {
     font-size: 1.2rem;
   }
+
   .btn {
     padding: 10px 14px;
     font-size: 0.9rem;
   }
 }
-

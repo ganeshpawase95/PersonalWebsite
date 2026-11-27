@@ -1,0 +1,32 @@
+[
+  [
+    "terminal",
+    "ASP.NET Core",
+    "C# and Web API development"
+  ],
+  [
+    "angular",
+    "Angular",
+    "TypeScript and component-based interfaces"
+  ],
+  [
+    "db",
+    "SQL Server",
+    "Relational data, queries and SSMS"
+  ],
+  [
+    "box",
+    "ERPNext",
+    "Implementation and customization"
+  ],
+  [
+    "network",
+    "REST APIs",
+    "Service design and integrations"
+  ],
+  [
+    "git",
+    "Git & GitHub",
+    "Source control and collaboration"
+  ]
+]

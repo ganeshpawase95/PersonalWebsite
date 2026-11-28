@@ -3,6 +3,25 @@ const themeButton = document.querySelector(".theme");
 const menuButton = document.querySelector(".menu");
 const nav = document.querySelector("nav");
 
+for (const gallery of document.querySelectorAll(".gallery")) {
+  const filters = gallery.querySelector(".filters");
+  const buttons = filters.querySelectorAll("button");
+  const cards = gallery.querySelectorAll("[data-category]");
+  filters.hidden = false;
+  filters.addEventListener("click", (event) => {
+    const selected = event.target.closest("button");
+    if (!selected) return;
+    const group = selected.dataset.filter;
+    let visible = 0;
+    for (const card of cards) {
+      card.hidden = group !== "All" && card.dataset.category !== group;
+      if (!card.hidden) visible++;
+    }
+    for (const button of buttons) button.setAttribute("aria-pressed", String(button === selected));
+    gallery.querySelector('[role="status"]').textContent = visible + (visible === 1 ? " project shown" : " projects shown");
+  });
+}
+
 function syncThemeLabel() {
   const dark = root.dataset.theme === "dark";
   const label = dark ? "Switch to light theme" : "Switch to dark theme";
@@ -54,8 +73,55 @@ document.addEventListener("pointerdown", (event) => {
 document.querySelector(".site-header").addEventListener("focusout", (event) => {
   if (!event.currentTarget.contains(event.relatedTarget)) setMenu(false);
 });
-matchMedia("(max-width: 760px)").addEventListener("change", () => setMenu(false));
+matchMedia("(max-width: 900px)").addEventListener("change", () => setMenu(false));
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
+
+if ("IntersectionObserver" in window) {
+  const entryEdges = new WeakMap();
+  const observer = new IntersectionObserver(entries => {
+    const siblingsEntering = new Map();
+    for (const entry of entries) {
+      const item = entry.target;
+      if (!entry.isIntersecting) {
+        const above = entry.boundingClientRect.bottom <= (entry.rootBounds?.top ?? 0);
+        entryEdges.set(item, above ? "above" : "below");
+        continue;
+      }
+
+      // Leave the initial viewport in place, including on direct links to sections.
+      const edge = entryEdges.get(item);
+      entryEdges.delete(item);
+      if (!edge || item.hasAttribute("data-scroll-entry")) continue;
+
+      const position = siblingsEntering.get(item.parentElement) ?? 0;
+      siblingsEntering.set(item.parentElement, position + 1);
+      item.style.setProperty("--entry-delay", Math.min(position, 3) * 45 + "ms");
+      item.dataset.scrollEntry = edge;
+    }
+  }, { rootMargin: "-12px 0px" });
+
+  const items = document.querySelectorAll(
+    ".highlights > div, .section-head, .about > div, #skills > h2, .skill, .project, " +
+    ".career > div:first-child, .job, .article-card, .contact > div, " +
+    ".detail > img, .detail > .cover, .detail > h2, .detail > h2 + p"
+  );
+  const preference = matchMedia("(prefers-reduced-motion: reduce)");
+  function syncScrollMotion() {
+    observer.disconnect();
+    for (const item of items) {
+      entryEdges.delete(item);
+      item.removeAttribute("data-scroll-entry");
+      if (!preference.matches) observer.observe(item);
+    }
+  }
+  function clearScrollEntry(event) {
+    if (event.animationName === "scroll-entry") event.target.removeAttribute("data-scroll-entry");
+  }
+  document.addEventListener("animationend", clearScrollEntry);
+  document.addEventListener("animationcancel", clearScrollEntry);
+  preference.addEventListener("change", syncScrollMotion);
+  syncScrollMotion();
+}
 
 const sections = Array.from(document.querySelectorAll("main section[id]"));
 if (sections.length) {

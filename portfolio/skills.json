@@ -1,32 +1,20 @@
 [
-  [
-    "terminal",
-    "ASP.NET Core",
-    "C# and Web API development"
-  ],
-  [
-    "angular",
-    "Angular",
-    "TypeScript and component-based interfaces"
-  ],
-  [
-    "db",
-    "SQL Server",
-    "Relational data, queries and SSMS"
-  ],
-  [
-    "box",
-    "ERPNext",
-    "Implementation and customization"
-  ],
-  [
-    "network",
-    "REST APIs",
-    "Service design and integrations"
-  ],
-  [
-    "git",
-    "Git & GitHub",
-    "Source control and collaboration"
-  ]
+  ["terminal", "ASP.NET Core", "C# and Web API development"],
+  ["angular", "Angular", "Component-based interfaces"],
+  ["db", "SQL Server", "Relational data and SSMS"],
+  ["erpnext", "ERPNext", "Implementation and consulting"],
+  ["frappe", "Frappe Framework", "Custom business applications"],
+  ["terminal", "Python", "Backend development and automation"],
+  ["network", "REST APIs", "Service design and integration"],
+  ["code", "TypeScript", "Typed JavaScript applications"],
+  ["code", "JavaScript", "Interactive web development"],
+  ["file", "HTML5", "Semantic page structure"],
+  ["layers", "CSS3", "Responsive layouts and styling"],
+  ["git", "Git", "Version control"],
+  ["github", "GitHub", "Code review and collaboration"],
+  ["git", "GitHub Actions", "CI/CD workflows"],
+  ["box", "Deployment", "Application releases"],
+  ["terminal", "Maintenance", "Monitoring and support"],
+  ["webrtc", "WebRTC", "Real-time browser communication"],
+  ["network", "AI & Automation", "Classification and research workflows"]
 ]

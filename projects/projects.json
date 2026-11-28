@@ -1,5 +1,65 @@
 [
   {
+    "slug": "browser-calling-chat",
+    "name": "Browser Calling & Chat",
+    "group": "Full Stack",
+    "category": "Real-time communication",
+    "illustration": "calling",
+    "desc": "A WebRTC application for calls and chat in the browser.",
+    "overview": "The project brings voice communication and text conversations into a browser-based experience.",
+    "tags": ["WebRTC", "Browser application"]
+  },
+  {
+    "slug": "ai-item-classification",
+    "name": "AI Item Classification",
+    "group": "AI",
+    "category": "Machine learning",
+    "illustration": "classification",
+    "desc": "An AI project that sorts items into categories using their size and shape.",
+    "overview": "Size and shape are the distinguishing features in this classification task. The project explores how those physical attributes can be used to group items.",
+    "tags": ["AI", "Classification"]
+  },
+  {
+    "slug": "company-research-automation",
+    "name": "Company Research Automation",
+    "group": "Automation",
+    "category": "Research workflow",
+    "illustration": "research",
+    "desc": "A spreadsheet-to-spreadsheet workflow for researching companies on the web.",
+    "overview": "The workflow starts with a company list in Excel, uses browser searches to research each entry, and organizes findings into the required Excel format.",
+    "tags": ["Excel", "Browser automation"]
+  },
+  {
+    "slug": "naukri-resume-automation",
+    "name": "Naukri Resume Automation",
+    "group": "Automation",
+    "category": "Recruitment workflow",
+    "illustration": "resume",
+    "desc": "A recruitment workflow for authorized résumé downloads from Naukri.",
+    "overview": "The scope is résumé retrieval within a recruiter's authorized access and the platform's terms. The illustration represents the document workflow using abstract shapes.",
+    "tags": ["Recruitment", "Browser automation"]
+  },
+  {
+    "slug": "erpnext-frappe-solutions",
+    "name": "ERPNext & Frappe Solutions",
+    "group": "ERP",
+    "category": "Case study in preparation",
+    "illustration": "erp",
+    "desc": "ERPNext implementation, consulting and custom applications built with Frappe.",
+    "overview": "This case study is reserved for a closer look at ERPNext customization and the role of Frappe applications in a business workflow.",
+    "tags": ["ERPNext", "Frappe", "Python"]
+  },
+  {
+    "slug": "real-estate-crm",
+    "name": "Real Estate CRM",
+    "group": "ERP",
+    "category": "Case study in preparation",
+    "illustration": "crm",
+    "desc": "A planned case study on customer relationship management in real estate.",
+    "overview": "The intended focus is CRM workflows and integrations in the real estate sector. Project-specific contributions and results are pending confirmation.",
+    "tags": ["CRM", "Integrations"]
+  },
+  {
     "slug": "election-fulcrum",
     "name": "Election Fulcrum",
     "category": "Web application",

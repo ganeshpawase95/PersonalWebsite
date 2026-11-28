@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Getting Started with Three.js",
+    "topic": "3D graphics",
+    "summary": "How scenes, cameras, renderers and meshes fit together to draw 3D graphics in a browser.",
+    "icon": "box",
+    "url": "https://dev.to/ganeshpawase95/threejs-1b9i"
+  },
+  {
+    "title": "Understanding the Basics of JavaScript",
+    "topic": "JavaScript",
+    "summary": "An introduction to variables, data types, functions and control flow.",
+    "icon": "code",
+    "url": null
+  }
+]

@@ -1,46 +1,127 @@
 [
   {
-    "name": "Children Mental Health Application",
-    "desc": "Web application platform that allows users to identify thier mental health using their symptoms and questionaries, The questionaries divided into Anxity, Depresion, and Stress.",
-    "image": "mentalapp",
-    "links": {
-      
-    }
+    "slug": "browser-calling-chat",
+    "name": "Browser Calling & Chat",
+    "group": "Full Stack",
+    "category": "Real-time communication",
+    "illustration": "calling",
+    "desc": "A WebRTC application for calls and chat in the browser.",
+    "overview": "The project brings voice communication and text conversations into a browser-based experience.",
+    "tags": ["WebRTC", "Browser application"]
   },
-
   {
-    "name": "Children Mental Health Website",
-    "desc": "Website that enables users to search about mental health awareness, view how to control their mental health, and some Yoga thearopy tips and videos for mental well-being.",
-    "image": "mentalhealthweb",
-    "links": {
-      
-    }
+    "slug": "ai-item-classification",
+    "name": "AI Item Classification",
+    "group": "AI",
+    "category": "Machine learning",
+    "illustration": "classification",
+    "desc": "An AI project that sorts items into categories using their size and shape.",
+    "overview": "Size and shape are the distinguishing features in this classification task. The project explores how those physical attributes can be used to group items.",
+    "tags": ["AI", "Classification"]
   },
-
   {
+    "slug": "company-research-automation",
+    "name": "Company Research Automation",
+    "group": "Automation",
+    "category": "Research workflow",
+    "illustration": "research",
+    "desc": "A spreadsheet-to-spreadsheet workflow for researching companies on the web.",
+    "overview": "The workflow starts with a company list in Excel, uses browser searches to research each entry, and organizes findings into the required Excel format.",
+    "tags": ["Excel", "Browser automation"]
+  },
+  {
+    "slug": "naukri-resume-automation",
+    "name": "Naukri Resume Automation",
+    "group": "Automation",
+    "category": "Recruitment workflow",
+    "illustration": "resume",
+    "desc": "A recruitment workflow for authorized résumé downloads from Naukri.",
+    "overview": "The scope is résumé retrieval within a recruiter's authorized access and the platform's terms. The illustration represents the document workflow using abstract shapes.",
+    "tags": ["Recruitment", "Browser automation"]
+  },
+  {
+    "slug": "erpnext-frappe-solutions",
+    "name": "ERPNext & Frappe Solutions",
+    "group": "ERP",
+    "category": "Case study in preparation",
+    "illustration": "erp",
+    "desc": "ERPNext implementation, consulting and custom applications built with Frappe.",
+    "overview": "This case study is reserved for a closer look at ERPNext customization and the role of Frappe applications in a business workflow.",
+    "tags": ["ERPNext", "Frappe", "Python"]
+  },
+  {
+    "slug": "real-estate-crm",
+    "name": "Real Estate CRM",
+    "group": "ERP",
+    "category": "Case study in preparation",
+    "illustration": "crm",
+    "desc": "A planned case study on customer relationship management in real estate.",
+    "overview": "The intended focus is CRM workflows and integrations in the real estate sector. Project-specific contributions and results are pending confirmation.",
+    "tags": ["CRM", "Integrations"]
+  },
+  {
+    "slug": "election-fulcrum",
     "name": "Election Fulcrum",
-    "desc": "Online Election System would have Candidate registration, document verification, auto-generated User ID, pass for candidates and Voters. Admin Login which will be handled by Election Commission.",
+    "category": "Web application",
     "image": "votingsystem",
-    "links": {
-      
-    }
+    "desc": "An online election system for candidate registration, document verification and election administration.",
+    "overview": "The application brings candidate records and verification into a single administrative workflow. Its design includes separate credentials for candidates and voters.",
+    "tags": [
+      "Registration",
+      "Administration"
+    ],
+    "links": {}
   },
-
   {
-    "name": "Personal Portfolio",
-    "desc": "Welcome to my professional portfolio! Here, you'll find a curated selection of projects that showcase my skills and experience in [your field or industry]. From [notable project/task] to [another project/task], I've demonstrated my ability to [key skill] and deliver results. Explore my work to learn more about my approach, capabilities, and the value I can bring to your organization.",
-    "image": "portfolio-v1",
-    "links": {
-      
-    }
-  },
-
-  {
+    "slug": "hotel-management",
     "name": "Hotel Management System",
-    "desc": "In this project, I analyzed the front desk and housekeeping operations at a 15-room hotel and implemented process improvements that increased efficiency by 25%. Key initiatives included streamlining check-in/check-out procedures, optimizing room assignment logic, and introducing a mobile app for housekeeping staff to receive real-time room status updates. These changes enhanced the guest experience, reduced wait times, and allowed staff to focus on higher-value tasks.",
+    "category": "Business software",
     "image": "hotel",
-    "links": {
-      
-    }
+    "desc": "A hotel operations project connecting front-desk tasks with housekeeping workflows.",
+    "overview": "The project covers check-in and check-out, room assignments and room-status updates for housekeeping staff.",
+    "tags": [
+      "Hospitality",
+      "Operations"
+    ],
+    "links": {}
+  },
+  {
+    "slug": "mental-health-awareness",
+    "name": "Children’s Mental Health Website",
+    "category": "Educational website",
+    "image": "mentalhealthweb",
+    "desc": "An educational website bringing mental health awareness resources and wellbeing videos together.",
+    "overview": "The site organizes introductory reading, yoga tips and videos in one place for visitors exploring mental wellbeing.",
+    "tags": [
+      "Education",
+      "Web design"
+    ],
+    "links": {}
+  },
+  {
+    "slug": "mental-health-app",
+    "name": "Children’s Mental Health Application",
+    "category": "Web application",
+    "image": "mentalapp",
+    "desc": "A questionnaire-based application exploring anxiety, depression and stress.",
+    "overview": "The application groups self-reported responses by topic. The project focuses on the questionnaire experience and the organization of responses.",
+    "tags": [
+      "Questionnaires",
+      "Wellbeing"
+    ],
+    "links": {}
+  },
+  {
+    "slug": "personal-portfolio",
+    "name": "Personal Portfolio",
+    "category": "Personal website",
+    "image": "portfolio-v1",
+    "desc": "An earlier edition of my personal site, presenting my development work and experience.",
+    "overview": "This edition collected project previews, technology skills and career information in a static portfolio.",
+    "tags": [
+      "HTML & CSS",
+      "JavaScript"
+    ],
+    "links": {}
   }
 ]
